@@ -1,0 +1,245 @@
+/* @font-face {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-display: swap;
+    src: url();
+} */
+
+:root {
+    /* Colors */
+    --navy_blue: 46, 47, 66;
+    --slate: 67, 68, 85;
+    --white: 255, 255, 255;
+    --iris: 77, 90, 229;
+    --cloud: 244, 244, 253;
+    --ocean: 64, 75, 191;
+    --cornflower: 231, 233, 252;
+}
+
+/* #region Base styles */
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: rgba(var(--navy_blue), 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    outline: 2px solid red;
+    outline-offset: -2px;
+}
+
+/* #endregion */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* #region Header */
+/* Logo */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: rgba(var(--navy_blue), 1);
+}
+
+.logo-accent {
+    color: rgba(var(--iris), 1);
+}
+
+.logo-footer {
+    color:rgba(var(--cloud), 1);
+}
+
+/* Menu */
+.header {
+    border-bottom: 1px solid rgba(var(--cornflower), 1);
+}
+
+.header-menu-link {
+    font-weight: 500;
+    color:rgba(var(--navy_blue), 1);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: rgba(var(--ocean), 1);
+}
+
+.header-contacts-link {
+    color: rgba(var(--slate), 1);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+    color:rgba(var(--ocean), 1);
+}
+/* #endregion */
+
+/* Main */
+/* #region Hero */
+.hero {
+    background: rgba(var(--navy_blue), 1);
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    text-align: center;
+    color: rgba(var(--white), 1);
+}
+
+.hero-button {
+    background: rgba(var(--iris), 1);
+    color: rgba(var(--white), 1);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background: rgba(var(--ocean), 1);
+}
+/* #endregion */
+
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: rgba(var(--navy_blue), 1);
+}
+
+.card-paragraph {
+    color: rgba(var(--slate), 1)
+}
+
+/* #region Section 1 - Advanteges */
+.advantages-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.advantages-paragraph {
+    color: rgba(var(--slate), 1);
+}
+/* #endregion */
+
+/* #region Section 2 - What are we doing */
+
+/* #endregion */
+
+/* #region Section 3 - Our team */
+.section-team {
+    background: rgba(var(--cloud), 1);
+}
+.team-item {
+    background: rgba(var(--white), 1);
+}
+.team-name-header {
+    text-align: center;
+}
+
+.team-position-paragraph{
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Footer */
+.footer {
+    background: rgba(var(--navy_blue), 1);
+}
+.footer-paragraph {
+    color: rgba(var(--cloud), 1);
+}
+/* #endregion */
+
+
+/* #region Portfolio */
+.portfolio-filter-button {
+    background: rgba(var(--cloud), 1);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: rgba(var(--iris), 1);
+}
+
+.portfolio-filter-button:hover,
+.portfolio-filter-button:focus {
+    background: rgba(var(--ocean), 1);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+    color: rgba(var(--white), 1);
+
+}
+
+.portfolio-projects-item {
+    border: 1px solid rgba(var(--cornflower), 1);
+    border-top: none;
+}
+/* #endregion */

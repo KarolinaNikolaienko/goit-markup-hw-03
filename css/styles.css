@@ -59,7 +59,10 @@ button {
     font-family: inherit;
     cursor: pointer;
     border: 0;
-    padding: 0;
+    padding: 12px 24px;
+    min-width: 69px;
+    min-height: 48px;
+    border-radius: 4px;
 }
 
 .container {
@@ -67,8 +70,13 @@ button {
     padding: 0 15px;
     margin: 0 auto;
 
-    outline: 2px solid red;
-    outline-offset: -2px;
+    /* outline: 2px solid red;
+    outline-offset: -2px; */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 
 /* #endregion */
@@ -90,6 +98,8 @@ button {
 /* #region Header */
 /* Logo */
 .logo {
+    display: block;
+    padding: 24px 0;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -103,16 +113,35 @@ button {
     color: rgba(var(--iris), 1);
 }
 
-.logo-footer {
-    color:rgba(var(--cloud), 1);
-}
-
 /* Menu */
 .header {
     border-bottom: 1px solid rgba(var(--cornflower), 1);
 }
 
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.header-menu-list {
+    display: flex;
+    margin-left: 76px;
+    gap: 40px;
+}
+
+.header-menu-item {
+    
+}
+
 .header-menu-link {
+    display: block;
+    padding: 24px 0;
     font-weight: 500;
     color:rgba(var(--navy_blue), 1);
 }
@@ -122,7 +151,14 @@ button {
     color: rgba(var(--ocean), 1);
 }
 
+.header-contacts-list {
+    display: flex;
+    gap: 40px;
+}
+
 .header-contacts-link {
+    display: block;
+    padding: 24px 0;
     color: rgba(var(--slate), 1);
 }
 
@@ -138,7 +174,15 @@ button {
     background: rgba(var(--navy_blue), 1);
 }
 
+.hero .container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .hero-title {
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07143;
@@ -146,7 +190,12 @@ button {
     color: rgba(var(--white), 1);
 }
 
+
+
 .hero-button {
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
     background: rgba(var(--iris), 1);
     color: rgba(var(--white), 1);
     font-weight: 500;
@@ -166,6 +215,7 @@ button {
     line-height: 1.11111;
     text-align: center;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .card-title {
@@ -174,6 +224,7 @@ button {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: rgba(var(--navy_blue), 1);
+    margin-bottom: 8px;
 }
 
 .card-paragraph {
@@ -181,10 +232,19 @@ button {
 }
 
 /* #region Section 1 - Advanteges */
+.section-advantages .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .advantages-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
+}
+
+.advantages-item {
+    width: 264px;
 }
 
 .advantages-paragraph {
@@ -193,15 +253,23 @@ button {
 /* #endregion */
 
 /* #region Section 2 - What are we doing */
-
+.section-services .container {
+    padding-bottom: 120px;
+}
 /* #endregion */
 
 /* #region Section 3 - Our team */
+.section-team .container {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 .section-team {
     background: rgba(var(--cloud), 1);
 }
 .team-item {
     background: rgba(var(--white), 1);
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    border-radius: 0 0 4px 4px;
 }
 .team-name-header {
     text-align: center;
@@ -210,13 +278,28 @@ button {
 .team-position-paragraph{
     text-align: center;
 }
+
+.team-name-wrapper {
+    padding: 32px 16px;
+}
 /* #endregion */
 
 /* #region Footer */
 .footer {
     background: rgba(var(--navy_blue), 1);
 }
+.footer .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.logo-footer {
+    display: inline-block;
+    color: rgba(var(--cloud), 1);
+    padding: 0;
+    margin-bottom: 16px;
+}
 .footer-paragraph {
+    width: 264px;
     color: rgba(var(--cloud), 1);
 }
 /* #endregion */

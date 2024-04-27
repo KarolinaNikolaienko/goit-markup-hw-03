@@ -14,6 +14,9 @@
     --cloud: 244, 244, 253;
     --ocean: 64, 75, 191;
     --cornflower: 231, 233, 252;
+    --gap-col: 24px;
+    --gap-row: 48px;
+    --card-amount: 3;
 }
 
 /* #region Base styles */
@@ -279,7 +282,7 @@ button {
     text-align: center;
 }
 
-.team-name-wrapper {
+.card-title-wrapper {
     padding: 32px 16px;
 }
 /* #endregion */
@@ -306,6 +309,18 @@ button {
 
 
 /* #region Portfolio */
+.portfolio .container {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolio-buttons-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
 .portfolio-filter-button {
     background: rgba(var(--cloud), 1);
     font-weight: 500;
@@ -321,7 +336,18 @@ button {
 
 }
 
+.portfolio-projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: var(--gap-col);
+    row-gap: var(--gap-row);
+}
+
 .portfolio-projects-item {
+    width: calc((100% - var(--gap-col) * (var(--card-amount)) - 1) / var(--card-amount));
+}
+
+.portfolio-projects-title-wrapper {
     border: 1px solid rgba(var(--cornflower), 1);
     border-top: none;
 }

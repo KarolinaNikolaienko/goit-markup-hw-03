@@ -177,7 +177,7 @@ button {
     background: rgba(var(--navy_blue), 1);
 }
 
-.hero .container {
+.hero {
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -235,7 +235,7 @@ button {
 }
 
 /* #region Section 1 - Advanteges */
-.section-advantages .container {
+.section-advantages {
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -256,18 +256,16 @@ button {
 /* #endregion */
 
 /* #region Section 2 - What are we doing */
-.section-services .container {
+.section-services {
     padding-bottom: 120px;
 }
 /* #endregion */
 
 /* #region Section 3 - Our team */
-.section-team .container {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 .section-team {
     background: rgba(var(--cloud), 1);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .team-item {
     background: rgba(var(--white), 1);
@@ -291,7 +289,7 @@ button {
 .footer {
     background: rgba(var(--navy_blue), 1);
 }
-.footer .container {
+.footer {
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -309,7 +307,7 @@ button {
 
 
 /* #region Portfolio */
-.portfolio .container {
+.portfolio {
     padding-top: 96px;
     padding-bottom: 120px;
 }
